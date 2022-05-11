@@ -11,6 +11,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,18 +22,22 @@
         <![endif]-->
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
         <header>
             <h1>Taylor Ashcraft</h1>
-            <h2>Front-end Developer</h2>
-            <section class="container">
-                <a href=""> <img src="" alt="Github link"></a>
-                <a href=""> <img src="" alt="Resume link"></a>
-                <a href=""> <img src="" alt="LinkedIn link"></a>
+            <h2>Front-end Web Developer</h2>
+            <section class="container" id="header-links">
+                
+                <a href=""><img src="Resources/Media/githubBlack.svg" alt="GitHub image"></a>
+                <p>GitHub</p>
+                <a href=""><img src="Resources/Media/resume.svg" alt="Resume image"></a>
+                <p>Resume</p>
+                <a href=""><img src="Resources/Media/linkedin.svg" alt="LinkedIn image"></a>
+                <p>LinkedIn</p>
             </section>
         </header>
        <section class="container" id="projects-and-skills">
@@ -37,37 +45,50 @@
             <section class="container" id="projects">
                 <h2>Projects</h2>
                 <section class="project" id="p1">
-                    <section class="container" id="preview"></section>
-                    <h3>Project Name:</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit </p>
-                    <a href=""><button>Live Version</button></a>
-                    <a href=""><button>View Code</button></a>
+                    <section class="container" id="preview"><p>Placeholder for project preview</p></section>
+                    <section class="container" id="description">
+                        <h3>Project Name:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit </p>
+                        <a href=""><button>Live Version</button></a>
+                        <a href=""><button>View Code</button></a>
+                    </section>
                 </section>
                 <section class="project" id="p2">
-                    <section class="container" id="preview"></section>
-                    <h3>Project Name:</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit </p>
-                    <a href=""><button>Live Version</button></a>
-                    <a href=""><button>View Code</button></a>
+                    <section class="container" id="preview"><p>Placeholder for project preview</p></section>
+                    <section class="container" id="description">
+                        <h3>Project Name:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit </p>
+                        <a href=""><button>Live Version</button></a>
+                        <a href=""><button>View Code</button></a>
+                    </section>    
+                        
+                
                 </section>
+                <button>Want to see more of my work?</button>    
             </section>
             <section id="skills">
-                <img src="" alt="HTML">
-                <img src="" alt="CSS">
-                <img src="" alt="Javascript">
-                <img src="" alt="React">
-                <img src="" alt="Angular">
-                <img src="" alt="Node">
-                <img src="" alt="Python">
-                <img src="" alt="Git & Github">
+                <h2>Skills</h2>
+                <div class="container">
+                    <img src="Resources/Media/css.svg" alt="">
+                    <img src="Resources/Media/html.svg" alt="">
+                    <img src="Resources/Media/javascript.svg" alt="">
+                    <img src="Resources/Media/nodejs.svg" alt="">
+                    <img src="Resources/Media/angular.svg" alt="">
+                    <img src="Resources/Media/react.svg" alt="">
+                    <img src="Resources/Media/python.svg" alt="">
+                    <img src="Resources/Media/github.svg" alt="">
+                </div>
             </section>
         </section> 
+
+        <footer>
+            <ul>
+                <li>Contact</li>
+                <li>Copyright Taylor Ashcraft 2022, all rights reserved.</li>
+            </ul>
+        </footer>
+
         <script src="" async defer></script>
     </body>
-    <footer>
-        <ul>
-            <li>Contact</li>
-            <li>Copyright Taylor Ashcraft 2022, all rights reserved.</li>
-        </ul>
-    </footer>
+    
 </html>
