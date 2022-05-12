@@ -52,18 +52,40 @@ h6 {
     font-family: 'Cinzel', serif;
     font-weight: 400;
 }
+h1 {
+    font-size: 4vw;
+}
 
 h2 {
     text-decoration: underline 1px;
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+h4 {
+    font-size: 1.125vw;
 }
 p,
 li {
     font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
 }
 
+button {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    border-radius: 3px;
+    color: #191726;
+    background-color: #72AED7;
+    border: 0px transparent;
+}
 img {
     max-height: 50px;
-    max-width: fit-content;
+    max-width: 100%;
+    min-height: 5vw;
 }
 nav {
     width: 100%;
@@ -82,8 +104,9 @@ nav ul {
 nav li {
     width: auto;
     list-style: none;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1vw;
 }
 nav li a {
     color: #F2F8FE
@@ -92,12 +115,17 @@ nav li a {
 
 header {
     width: 100%;
+    max-height: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 70px;
-    background-color: #3B6D95;
+    background-color: #3b6c953b;
+    background-image: linear-gradient(rgba(5, 0, 0, 0.493), rgba(0, 0, 0, 0.377)),
+        url("Resources/Media/SaltLakeCity.jpg");
+    background-position: center;
+    background-size: cover;
     color: #F2F8FE;
 }
 
@@ -105,6 +133,25 @@ header img {
     filter: invert(100%) sepia(88%) saturate(1698%) hue-rotate(179deg) brightness(111%) contrast(99%);
 }
 
+header p {
+    display: flex;
+    align-items: center;
+}
+
+#location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+#location h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img#location {
+    height: 10vw;
+}
 
 #header-links.container {
     display: flex;
@@ -133,19 +180,49 @@ header img {
     padding-left: 2rem;
     background-color: #F2F8FE;
 }
-.project {
+.pbox {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.project {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin-right: 3vw;
+    padding: 2vw;
 
 }
 #preview {
     height: 17vw;
-    width: 32vw;
+    width: 100%;
     border: solid 1px black;
+}
+
+#preview img {
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+.pbox ul,
+.pbox h4 {
+    margin: 0;
+}
+
+.pbox h4 {
+    margin-top: 2vw;
 }
 #description {
     padding-left: 10px;
 }
+#description h3 {
+    margin-top: 0;
+}
+
 #skills {
     display: flex;
     flex-direction: column;
@@ -154,6 +231,11 @@ header img {
     border-left: solid 1px black;
     padding-left: 2rem;
     background-color: #F2F8FE;
+}
+
+#skills img {
+    height: 10vw;
+    min-height: 6vw;
 }
 
 div.container {
@@ -184,3 +266,45 @@ footer ul {
 footer li {
     padding: 10px;
 }
+
+/* Contact Page */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #72AED7;
+    color: #191726;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #191726;
+    color: #F2F8FE;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  form {
+      margin-top: 2vw;
+      margin-bottom: 10vw;
+  }

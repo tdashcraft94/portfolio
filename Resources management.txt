@@ -1,0 +1,19 @@
+Fonts and styles
+link: 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+Headings: Cinzel
+Paragraphs: Raleway
+Navigation: Raleway
+
+Colors: 
+
+
+Shapes/aesthetics
+
+images to include:
+- Technology icons
+- project previews
+- background? (Salt Lake City, abstract, etc.)
